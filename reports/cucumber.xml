@@ -1,49 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="14.827" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Adiciona compra no carrinho e finaliza compra da categoria de monitores" name="Acesso a categoria de monitor, adiciono 1 item no carrinho e finalizo a compra" time="14.603">
-<failure type="org.openqa.selenium.ElementNotInteractableException" message="element not interactable
-  (Session info: chrome=130.0.6723.92)
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [168d2ededc455f955edcc24c98439518, clickElement {id=f.C296AE6C684BEE039F8EED8544A2672E.d.F4E5F8AFC159A556DCB8C7DE97FD4582.e.221}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\ANGELI~1.MEL\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59139}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59139/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (168d2ededc455f955edcc24c98439518)] -&gt; xpath: //button[contains(text(), 'Close')]]
-Session ID: 168d2ededc455f955edcc24c98439518">
-<![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=130.0.6723.92)
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [168d2ededc455f955edcc24c98439518, clickElement {id=f.C296AE6C684BEE039F8EED8544A2672E.d.F4E5F8AFC159A556DCB8C7DE97FD4582.e.221}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\ANGELI~1.MEL\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59139}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59139/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (168d2ededc455f955edcc24c98439518)] -> xpath: //button[contains(text(), 'Close')]]
-Session ID: 168d2ededc455f955edcc24c98439518
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
-	at cucumber.tasks.CartTask.validarPedidoFinalizado(CartTask.java:76)
-	at cucumber.steps.FinalizacaoCompraSteps.validarPedidoFinalizado(FinalizacaoCompraSteps.java:47)
-	at ✽.o pedido deve ser finalizado com sucesso(file:///C:/Users/angelina.melo/Documents/Projetos/Capacitação%20Renner/webautomation-desafio-final/src/test/resources/features/finalizaCompra.feature:16)
-]]>
-</failure>
+<testsuite name="Cucumber" time="22.645" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Adiciona compra no carrinho e finaliza compra da categoria de monitores" name="Acesso a categoria de monitor, adiciono 1 item no carrinho e finalizo a compra" time="22.211">
 <system-out><![CDATA[
 Dado que estou na pagina inicial............................................passed
 Dado que clico no link de Monitores.........................................passed
@@ -51,7 +8,7 @@ E clico em um monitor da lista..............................................pass
 E adiciono o item no carrinho...............................................passed
 Quando acesso o menu card...................................................passed
 E finalizo o pedido.........................................................passed
-Então o pedido deve ser finalizado com sucesso..............................failed
+Então o pedido deve ser finalizado com sucesso..............................passed
 ]]></system-out>
 </testcase>
 </testsuite>

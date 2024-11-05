@@ -16,7 +16,7 @@ public class TestBase {
         return driver;
     }
 
-    public WebDriver getDriver(){
+    public static WebDriver getDriver(){
         if(driver == null){
             startDriver();
         }
@@ -24,7 +24,7 @@ public class TestBase {
 
     }
 
-    public void quitDriver(){
+    public static void quitDriver(){
         if(driver != null){
             driver.quit();
             driver = null;

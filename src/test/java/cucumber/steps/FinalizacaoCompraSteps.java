@@ -1,7 +1,6 @@
 package cucumber.steps;
 
 import cucumber.TestBase;
-import cucumber.pages.GenericHeaderPage;
 import cucumber.tasks.CartTask;
 import cucumber.tasks.GenericHeaderTask;
 import cucumber.tasks.HomeTask;
@@ -16,14 +15,8 @@ public class FinalizacaoCompraSteps extends TestBase {
     GenericHeaderTask genericHeaderTask = new GenericHeaderTask(getDriver());
     CartTask cartTask = new CartTask(getDriver());
 
-
-
-    public FinalizacaoCompraSteps(){}
-
     @Dado("que estou na pagina inicial")
-    public void navegarParaPaginaInicial(){
-        driver.get(URL);
-    }
+    public void navegarParaPaginaInicial(){homeTask.verificarSeEstaNaHomePage();}
 
     @Dado("que clico no link de Monitores")
     public void clicarNoLinkMonitors(){homeTask.clicarNoLinkMonitors();}
@@ -38,12 +31,8 @@ public class FinalizacaoCompraSteps extends TestBase {
     public void acessarMenuCard(){genericHeaderTask.acessarMenuCart();}
 
     @E("finalizo o pedido")
-    public void finalizarPedido(){
-        cartTask.fazerPedido();
-    }
+    public void finalizarPedido(){ cartTask.fazerPedido();}
 
     @Entao("o pedido deve ser finalizado com sucesso")
-    public  void validarPedidoFinalizado(){
-        cartTask.validarPedidoFinalizado();
-    }
+    public  void validarPedidoFinalizado(){cartTask.validarPedidoFinalizado();}
 }

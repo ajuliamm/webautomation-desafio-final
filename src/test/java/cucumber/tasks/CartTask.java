@@ -73,7 +73,6 @@ public class CartTask extends CartPage {
         Assert.assertTrue(modalText.getText().contains("Thank you for your purchase!"));
         validarDadosDaCompra();
         botaoOK.click();
-        botaoClose.click();
     }
 
     public void validarDadosDaCompra(){
@@ -87,8 +86,5 @@ public class CartTask extends CartPage {
         Assert.assertEquals(nomeCliente,clientFake.getName());
         Assert.assertEquals(numeroCartaoClient,clientFake.getCreditCart());
         Assert.assertEquals(totalCompra,clientFake.getTotalUltimaCompra());
-
-
-
     }
 }

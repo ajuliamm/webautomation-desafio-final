@@ -8,6 +8,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
+import static cucumber.TestBase.*;
+
+
 public class HomeTask extends HomePage {
 
     private WebDriver driver;
@@ -17,6 +20,10 @@ public class HomeTask extends HomePage {
         this.driver = driver;
         this.wait = new Waits(driver);
         PageFactory.initElements(new AjaxElementLocatorFactory(driver, 10), this);
+    }
+
+    public void verificarSeEstaNaHomePage(){
+        Assert.assertTrue(driver.getCurrentUrl().equals(URL));
     }
 
     public void clicarNoLinkMonitors(){monitorsLink.click();}
