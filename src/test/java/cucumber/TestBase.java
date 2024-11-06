@@ -10,7 +10,7 @@ public class TestBase {
 
     public static WebDriver startDriver(){
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--start-maximize");
+        options.addArguments("--start-maximized");
         options.addArguments("--incognito");
         driver = new ChromeDriver(options);
         return driver;

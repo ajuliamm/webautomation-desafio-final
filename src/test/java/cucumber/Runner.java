@@ -11,6 +11,7 @@ import org.junit.runner.RunWith;
         tags = "@Global",
         plugin = {
                 "pretty",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                 "html:reports/cucumber.html",
                 "json:reports/cucumber.json",
                 "junit:reports/cucumber.xml"

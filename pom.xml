@@ -39,6 +39,26 @@
               <version>0.15</version>
           </dependency>
 
+          <dependency>
+              <groupId>tech.grasshopper</groupId>
+              <artifactId>extentreports-cucumber7-adapter</artifactId>
+              <version>1.14.0</version>
+          </dependency>
+
+          <dependency>
+              <groupId>com.aventstack</groupId>
+              <artifactId>extentreports</artifactId>
+              <version>5.0.9</version>
+          </dependency>
+
+          <!-- <dependency>
+              <groupId>ru.yandex.qatools.ashot</groupId>
+              <artifactId>ashot</artifactId>
+              <version>1.5.4</version>
+          </dependency>-->
+
+
+
       </dependencies>
 
 </project>
