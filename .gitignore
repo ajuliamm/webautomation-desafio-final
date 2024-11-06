@@ -1,0 +1,16 @@
+# Pastas e arquivos específicos da IDE
+.idea/
+.vscode/
+
+# Relatórios gerados por testes
+reports/
+
+# Artefatos de build (Maven/Gradle)
+target/
+
+# Resultados de execução de testes
+test-output/
+
+# Arquivos temporários ou de sistema
+*.log
+*.tmp
